@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Study Helper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>📚 AI Flashcard Generator</h1>
+
+    <!-- Upload File -->
+    <input type="file" id="fileInput" accept=".txt">
+
+    <!-- Text Input -->
+    <textarea id="inputText" placeholder="Paste or upload your notes here..."></textarea>
+
+    <div class="buttons">
+        <button onclick="generateFlashcards()">Generate Flashcards</button>
+        <button onclick="startVoice()">🎤 Voice Input</button>
+        <button onclick="speakText()">🔊 Read Notes</button>
+        <button onclick="downloadFlashcards()">⬇ Download Flashcards</button>
+    </div>
+
+    <!-- Flashcards Output -->
+    <div id="flashcards"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
